@@ -1,0 +1,25 @@
+{
+  "name": "monument-cli",
+  "version": "0.0.2",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/admazzola/monument-cli.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/admazzola/monument-cli/issues"
+  },
+  "homepage": "https://github.com/admazzola/monument-cli#readme",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "http-server": "^0.10.0",
+    "phaser-ce": "^2.9.1"
+  }
+}
