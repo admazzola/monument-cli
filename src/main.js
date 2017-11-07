@@ -8,6 +8,7 @@ import GameState from './states/Game'
 import EditorState from './states/Editor'
 import EditorLoadSplashState from './states/EditorLoadSplash'
 import GameLoadSplashState from './states/GameLoadSplash'
+import PauseMenuState from './states/PauseMenu'
 
 import config from './config'
 
@@ -25,6 +26,7 @@ class Game extends Phaser.Game {
     this.state.add('Editor', EditorState, false)
     this.state.add('GameLoadSplash', GameLoadSplashState, false)
     this.state.add('EditorLoadSplash', EditorLoadSplashState, false)
+    this.state.add('PauseMenu', PauseMenuState, false)
 
     // with Cordova with need to wait that the device is ready so we will call the Boot state in another file
     if (!window.cordova) {

@@ -1,12 +1,24 @@
 import Phaser from 'phaser'
 import { centerGameObjects } from '../utils'
 
+
+
 export default class extends Phaser.State {
 
 
 
 
-  init () {}
+  init () {
+
+
+
+    this.menuConfig = {
+      startY: 260,
+      startX: 30
+      }
+
+      Phaser.Utils.mixinPrototype(this, mixins);
+  }
 
   preload () {
   //  this.loaderBg = this.add.sprite(this.game.world.centerX, this.game.world.centerY, 'loaderBg')
@@ -43,18 +55,5 @@ export default class extends Phaser.State {
 
 
 
-  addMenuOption(text, callback) {
-    var txt = game.add.text(30, (this.optionCount * 80) + 100, text, style.navitem.default);
-    txt.inputEnabled = true;
-    this.optionCount ++;
-    txt.events.onInputUp.add(callback);
-    txt.events.onInputOver.add(function (target) {
-      target.setStyle(style.navitem.hover);
-    });
-    txt.events.onInputOut.add(function (target) {
-      target.setStyle(style.navitem.default);
-    });
-
-  }
 
 }
