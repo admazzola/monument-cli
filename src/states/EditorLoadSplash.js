@@ -26,8 +26,7 @@ export default class extends Phaser.State {
 
 
 
-    game.load.atlas('kenney-ui-tiles', 'assets/kenney-theme/kenney-theme.png', 'assets/kenney-theme/kenney-theme.json', Phaser.Loader.TEXTURE_ATLAS_JSON_HASH);
-
+  
 
     this.load.image('mushroom', 'assets/images/mushroom2.png')
   }

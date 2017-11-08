@@ -14,18 +14,20 @@ export default class Panel extends GUIElement{
   {
 
 
-      var nine = NineImage.create(this.game,
+      var nine = new Phaser.NineImage(this.game,
+        0,
+        0,
         200,
         300,
         "kenney-ui-tiles",
-         "kenney-ui-tiles",
+         0,
          25, 25, 25, 25, false);
 
-          this.background = new Sprite(this.game, 0, 0, nine.texture)
-           this.background.anchor.setTo(0.5, 0.5);
+           this.background = new Phaser.Sprite(this.game, 0, 0, nine.texture)
+        //   this.background.anchor.setTo(0.5, 0.5);
 
 
-           this.getRenderGroup().add(background);
+           this.getRenderGroup().add(this.background);
 
   }
 

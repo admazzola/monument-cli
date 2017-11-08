@@ -25,6 +25,9 @@ export default class extends Phaser.State {
     this.load.image('loaderBg', './assets/images/loader-bg.png')
     this.load.image('loaderBar', './assets/images/loader-bar.png')
 
+    game.load.atlas('kenney-ui-tiles', 'assets/kenney-theme/kenney-theme.png', 'assets/kenney-theme/kenney-atlas.json', Phaser.Loader.TEXTURE_ATLAS_JSON_HASH);
+
+
     //load scripts needed for menus
     game.load.script('style', 'lib/style.js');
     game.load.script('mixins', 'lib/mixins.js');

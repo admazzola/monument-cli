@@ -5,8 +5,7 @@ var BrowserSyncPlugin = require('browser-sync-webpack-plugin')
 
 // Phaser webpack config
 var phaserModule = path.join(__dirname, '/node_modules/phaser-ce/')
-var nineslice = path.join(__dirname, '/node_modules/@orange-games/phaser-nineslice/build/phaser-nineslice.js')
-var phaser = path.join(phaserModule, 'build/custom/phaser-split.js')
+ var phaser = path.join(phaserModule, 'build/custom/phaser-split.js')
 var pixi = path.join(phaserModule, 'build/custom/pixi.js')
 var p2 = path.join(phaserModule, 'build/custom/p2.js')
 
@@ -20,7 +19,7 @@ module.exports = {
       'babel-polyfill',
       path.resolve(__dirname, 'src/main.js')
     ],
-    vendor: ['pixi', 'p2', 'phaser', 'nineslice', 'webfontloader']
+    vendor: ['pixi', 'p2', 'phaser', 'webfontloader']
   },
   devtool: 'cheap-source-map',
   output: {
@@ -64,7 +63,7 @@ module.exports = {
       { test: /pixi\.js/, use: ['expose-loader?PIXI'] },
       { test: /phaser-split\.js$/, use: ['expose-loader?Phaser'] },
       { test: /p2\.js/, use: ['expose-loader?p2'] },
-            { test: /\.ts$/, loader: 'ts-loader', exclude: '/node_modules/' }
+      //      { test: /\.ts$/, loader: 'ts-loader', exclude: '/node_modules/' }
     ]
   },
   node: {
@@ -77,8 +76,7 @@ module.exports = {
     alias: {
       'phaser': phaser,
       'pixi': pixi,
-      'p2': p2,
-      'nineslice': nineslice
+      'p2': p2
     }
   }
 }
