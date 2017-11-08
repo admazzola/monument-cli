@@ -10,6 +10,9 @@ import EditorLoadSplashState from './states/EditorLoadSplash'
 import GameLoadSplashState from './states/GameLoadSplash'
 import PauseMenuState from './states/PauseMenu'
 
+
+
+
 import config from './config'
 
 class Game extends Phaser.Game {

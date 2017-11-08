@@ -1,7 +1,11 @@
 import Phaser from 'phaser'
+
+
 import { centerGameObjects } from '../utils'
 
+//import EditorMenu from '../gui/EditorMenu'
 
+import FrontMenu from '../gui/FrontMenu'
 
 export default class extends Phaser.State {
 
@@ -11,13 +15,7 @@ export default class extends Phaser.State {
   init () {
 
 
-
-    this.menuConfig = {
-      startY: 260,
-      startX: 30
-      }
-
-      Phaser.Utils.mixinPrototype(this, mixins);
+    ///  Phaser.Utils.mixinPrototype(this, mixins);
   }
 
   preload () {
@@ -34,17 +32,13 @@ export default class extends Phaser.State {
     game.stage.disableVisibilityChange = true;
 
 
-    this.optionCount = 1;
-    this.addMenuOption('Join Game', function (target) {
 
-      window.game.state.start('Game')
-    });
-    this.addMenuOption('Editor', function (target) {
-      window.game.state.start('Editor')
-    });
-    this.addMenuOption('Credits', function (target) {
-      console.log('You clicked Credits!');
-    });
+    var frontMenu = new FrontMenu(this.game);
+    frontMenu.attachToGame();
+
+  //  let editormenu = new EditorMenu(this.game)
+
+    //game.add.group(editormenu)
 
 
   }

@@ -1,7 +1,25 @@
 # Monument
 
 
+http://discourse.mapeditor.org/t/isometric-in-tiled-where-to-begin/780/3
 
+
+GUI:
+
+list view
+https://libraries.io/github/mattcolman/phaser-list-view
+
+input field
+https://libraries.io/github/orange-games/phaser-input
+
+
+debug menu
+https://libraries.io/github/samme/phaser-plugin-game-gui
+
+
+
+Behavior example
+https://libraries.io/github/luizbills/phaser-behavior-plugin
 
 #Uses phaser bootstrap...
 

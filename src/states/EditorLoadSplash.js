@@ -19,12 +19,15 @@ export default class extends Phaser.State {
     this.loadGameAssets()
   }
 
-  loadGameAssets() //all of them ! 
+  loadGameAssets() //all of them !
   {
+
+    this.game.load.image('tiles', '/images/terrain_atlas.png');
+
     this.load.image('mushroom', 'assets/images/mushroom2.png')
   }
 
   create () {
-    this.state.start('Game')
+    this.state.start('Editor')
   }
 }
