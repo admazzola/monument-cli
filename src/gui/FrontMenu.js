@@ -13,11 +13,15 @@ export default class extends GUIElement {
 
 
       var pane = new Panel(this.game);
+
+      pane.create();
+
+
       this.addChild(pane);
 
 
 
-    this.optionListMenuConfig = {
+  /*  this.optionListMenuConfig = {
       startY: 60,
       startX: 30
       }
@@ -37,7 +41,7 @@ export default class extends GUIElement {
 
 
     this.addChild(this.optionlist);
-
+*/
 
 
   }

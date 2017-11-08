@@ -4,6 +4,7 @@ import Phaser from 'phaser'
 import { centerGameObjects } from '../utils'
 
 //import EditorMenu from '../gui/EditorMenu'
+ 
 
 import FrontMenu from '../gui/FrontMenu'
 

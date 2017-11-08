@@ -1,6 +1,7 @@
 import Phaser from 'phaser'
 import WebFont from 'webfontloader'
 
+
 export default class extends Phaser.State {
   init () {
     this.stage.backgroundColor = '#EDEEC9'
@@ -27,6 +28,9 @@ export default class extends Phaser.State {
     //load scripts needed for menus
     game.load.script('style', 'lib/style.js');
     game.load.script('mixins', 'lib/mixins.js');
+
+
+
 
   }
 

@@ -7,9 +7,13 @@ Will be a gigantic JSON file
 ECS System
 http://www.paolodistefano.com/2014/12/27/ecs/
 
-Colyseus 
+Colyseus
 https://medium.com/@endel/colyseus-minimalistic-mmo-game-server-for-node-js-a29fe1cebbfe
 
+
+
+Game mechanics..
+https://gamemechanicexplorer.com/#platformer-1
 
 # Assets
 Icons
