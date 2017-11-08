@@ -17,7 +17,7 @@ export default class OptionList extends GUIElement{
 
     // use the className argument, or fallback to menuConfig, but
     // if menuConfig isn't set, just use "default"
-    className || (className = this.menuConfig.className || 'default');
+    //className || ( 'default');
 
     // set the x coordinate to game.world.center if we use "center"
     // otherwise set it to menuConfig.startX

@@ -26,10 +26,10 @@ export default class OptionList extends GUIElement{
 
   }
 
-  addMenuOption(text, callback, className) {
+  addMenuOption(text, callback, fontClassName) {
 
     this.numberOfOptions = this.menuOptions.length;
-    var new_option = new MenuOption(this.game,text,this.menuConfig,callback,className,this.numberOfOptions);
+    var new_option = new MenuOption(this.game,text,this.menuConfig,callback,fontClassName,this.numberOfOptions);
 
     this.menuOptions.push(new_option);
     this.addChild(new_option);

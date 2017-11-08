@@ -16,14 +16,14 @@ export default class extends GUIElement {
 
       pane.create();
 
-
       this.addChild(pane);
 
 
 
-  /*  this.optionListMenuConfig = {
+ this.optionListMenuConfig = {
       startY: 60,
-      startX: 30
+      startX: 30,
+      fontSize: 10
       }
 
     this.optionlist = new OptionList(this.game,this.optionListMenuConfig);
@@ -41,7 +41,7 @@ export default class extends GUIElement {
 
 
     this.addChild(this.optionlist);
-*/
+
 
 
   }

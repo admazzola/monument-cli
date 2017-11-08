@@ -21,7 +21,8 @@ export default class Panel extends GUIElement{
         300,
         "kenney-ui-tiles",
          0,
-         25, 25, 25, 25, false);
+         0, 0, 0, 0, //padding of the borders 
+         false);
 
            this.background = new Phaser.Sprite(this.game, 0, 0, nine.texture)
         //   this.background.anchor.setTo(0.5, 0.5);
