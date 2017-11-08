@@ -18,23 +18,7 @@ export default class extends GUIElement {
       var pane = new Panel();
     this.addChild(pane);
 
-      /*
-    this.optionlist = new OptionList(this.game,this.menuConfig);
-
-    this.optionCount = 1;
-    this.optionlist.addMenuOption('Join Game', function (target) {
-
-      this.game.state.start('GameLoadSplash')
-    });
-    this.optionlist.addMenuOption('Editor', function (target) {
-      this.game.state.start('EditorLoadSplash')
-    });
-    this.optionlist.addMenuOption('Credits', function (target) {
-      console.log('You clicked Credits!');
-    });
-
-    this.add.group(optionlist);
-    */
+   
 
 
   }
