@@ -63,7 +63,7 @@ module.exports = {
       { test: /pixi\.js/, use: ['expose-loader?PIXI'] },
       { test: /phaser-split\.js$/, use: ['expose-loader?Phaser'] },
       { test: /p2\.js/, use: ['expose-loader?p2'] },
-      //      { test: /\.ts$/, loader: 'ts-loader', exclude: '/node_modules/' }
+      { test: /\.ts$/, loader: 'ts-loader', exclude: '/node_modules/' }
     ]
   },
   node: {

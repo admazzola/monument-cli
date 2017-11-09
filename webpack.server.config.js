@@ -26,7 +26,7 @@ module.exports = {
     pathinfo: true,
     path: path.resolve(__dirname, 'dist'),
     publicPath: './dist/',
-    filename: 'bundle.js'
+    filename: 'serverbundle.js'
   },
   watch: true,
   plugins: [
@@ -63,7 +63,7 @@ module.exports = {
       { test: /pixi\.js/, use: ['expose-loader?PIXI'] },
       { test: /phaser-split\.js$/, use: ['expose-loader?Phaser'] },
       { test: /p2\.js/, use: ['expose-loader?p2'] },
-      //      { test: /\.ts$/, loader: 'ts-loader', exclude: '/node_modules/' }
+       { test: /\.ts$/, loader: 'ts-loader', exclude: '/node_modules/' }
     ]
   },
   node: {
